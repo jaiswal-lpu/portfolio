@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Neha Jaiswal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#hero">NJ</a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+        <h1>Hi, I'm <span class="highlight">Neha Jaiswal</span></h1>
+        <h2>I'm a <span class="typing"></span></h2>
+        <p>Experienced Machine Learning Engineer crafting innovative solutions</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn primary-btn" data-aos="fade-right" data-aos-delay="200" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+            <i class="fas fa-code"></i> View My Work
+          </a>
+          <a href="#contact" class="btn secondary-btn" data-aos="fade-left" data-aos-delay="300" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+        <div class="social-icons" data-aos="fade-up" data-aos-delay="400">
+          <a href="https://github.com/jaiswal-lpu" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" onclick="window.open(this.href, '_blank')">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/neha-1jaiswal-/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" onclick="window.open(this.href, '_blank')">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:nj22260@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email Me" onclick="window.location.href='mailto:nj22260@gmail.com'">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>     
+      </div>
+    </div>
+    <!-- <div class="hero-bg-animation">
+      <div class="shape shape1" data-aos="zoom-in" data-aos-delay="100"></div> -->
+      <div class="shape shape2" data-aos="zoom-in" data-aos-delay="200"></div>
+      <div class="shape shape3" data-aos="zoom-in" data-aos-delay="300"></div>
+    </div> 
+    <div class="scroll-down">
+      <a href="#about" aria-label="Scroll to About section" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>  
+  
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+          <div class="image-wrapper">
+            <img src="images/Neha Jaiswal.jpg"alt="Neha Jaiswal">
+          </div>
+        </div>
+        <div class="about-text" data-aos="fade-left" data-aos-delay="300">
+          <h3>Who am I?</h3>
+          <p>I'm a passionate Java developer with over 1 years of experience creating beautiful, functional Projects. I specialize in Machine Learning development but also backed by a strong foundation in Python, Java, C++, and C. </p>
+          <p>I am constantly pushing my boundaries to innovate and learn. I'm also certified in Cloud Computing and DevOps, and I enjoy solving problems, collaborating with teams, and adapting to new challenges.</p>
+          <div class="about-details">
+            <div class="detail">
+              <i class="fas fa-user"></i>
+              <div>
+                <h4>Name</h4>
+                <p>Neha Jaiswal</p>
+              </div>
+            </div>
+            <div class="detail">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>nj22260@gmail.com</p>
+              </div>
+            </div>
+            <div class="detail">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Jalandhar,Panjab</p>
+              </div>
+            </div>
+            <div class="detail">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <h4>Education</h4>
+                <p>BTech Computer Science</p>
+              </div>
+            </div>
+          </div>
+          <a href="CV1.pdf" class="download-btn" style="display: inline-flex; align-items: center; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; transition: background-color 0.3s ease;">
+            <i class="fas fa-download" style="margin-right: 8px;"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Skills Section -->
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2>My Skills And Technologies</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="skills-content">
+
+      <!-- Programming Languages -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+        <h3>Programming Languages</h3>
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h4>C++</h4>
+            <div class="progress-container">
+              <div class="progress-bar" data-width="95">
+                <span class="progress-text">95%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="skill-icon">
+              <i class="fab fa-java"></i>
+            </div>
+            <h4>Java</h4>
+            <div class="progress-container">
+              <div class="progress-bar" data-width="90">
+                <span class="progress-text">90%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h4>HTML</h4>
+            <div class="progress-container">
+              <div class="progress-bar" data-width="85">
+                <span class="progress-text">85%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h4>CSS</h4>
+            <div class="progress-container">
+              <div class="progress-bar" data-width="80">
+                <span class="progress-text">80%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tools/Platforms -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+        <h3>Tools/Platforms</h3>
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="700">
+            <div class="skill-icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <h4>Git</h4>
+            <div class="progress-container">
+              <div class="progress-bar" data-width="75">
+                <span class="progress-text">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="800">
+            <div class="skill-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <h4>GitHub</h4>
+            <div class="progress-container">
+              <div class="progress-bar" data-width="70">
+                <span class="progress-text">70%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="900">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h4>MySQL Server</h4>
+            <div class="progress-container">
+              <div class="progress-bar" data-width="65">
+                <span class="progress-text">65%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="1000">
+            <div class="skill-icon">
+              <i class="fab fa-docker"></i>
+            </div>
+            <h4>Docker</h4>
+            <div class="progress-container">
+              <div class="progress-bar" data-width="60">
+                <span class="progress-text">60%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="1100">
+        <h3>Soft Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="1200">
+            <div class="skill-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h4>Problem-Solving</h4>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="1300">
+            <div class="skill-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4>Team Player</h4>
+          </div>
+
+          <div class="skill-card" data-aos="zoom-in" data-aos-delay="1400">
+            <div class="skill-icon">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <h4>Adaptability</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>My Projects</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="project-filters" data-aos="fade-up" data-aos-delay="200">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">App</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="Todo App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Todo App</h3>
+            <p>A fully responsive Todo Appication built with Flutter Programming language Dart and Firebase</p>
+            <div class="project-tags">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Firebase</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="app" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7" alt="Task Management App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>ChatApplication</h3>
+            <p>A task management application with drag-and-drop functionality.</p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>Firebase</span>
+              <span>CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- portfolio design -->
+        <div class="project-card" data-category="design" data-aos="fade-up" data-aos-delay="500">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d" alt="Portfolio Design">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Portfolio Design</h3>
+            <p>A modern portfolio design for creative professionals.</p>
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="600">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643" alt="Blog Platform">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" target="_blank"><i class="fas fa-link"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Blog Platform</h3>
+            <p>A content management system for bloggers with custom themes.</p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Resume Download section  -->
+<section class="resume-download" id="resume" data-aos="fade-up" data-aos-delay="1000">
+    <div class="container" style="padding: 4rem 2rem;">
+        <div class="resume-content" style="display: flex; align-items: center; justify-content: center; gap: 3rem; max-width: 1200px; margin: 0 auto;">
+            <div class="resume-gif" data-aos="fade-right" style="flex: 1; text-align: center;">
+                <img src="https://media.giphy.com/media/gZF0FOhkEE8uMPkNQr/giphy.gif?cid=ecf05e47chkgl730g6agbppdaztz7np0msibagni297sdqmn&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="Download indicator" style="max-width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+            <div class="resume-text" data-aos="fade-left" style="flex: 1; text-align: center;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: #2c3e50; font-weight: 700;">Download My Resume</h2>
+                <a href="CV1.pdf" class="download-btn" download style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(45deg, #2c3e50, #3498db); color: white; text-decoration: none; border-radius: 50px; font-size: 1.2rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                    <i class="fas fa-download" style="margin-right: 10px;"></i>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </div>    
+  </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="personal-info" data-aos="fade-right">
+            <h3>Neha Jaiswal</h3>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p>nj22260@gmail.com</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <p>+91 8887697896</p>
+            </div>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/neha-1jaiswal-/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/jaiswal-lpu" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+    
+          <div class="skills-section" data-aos="fade-left">
+            <div class="skill-category">
+              <h4>Languages</h4>
+              <div class="skills-list">
+                <span>C</span>
+                <span>C++</span>
+                <span>Python</span>
+                <span>Java</span>
+              </div>
+            </div>
+    
+            <div class="skill-category">
+              <h4>Technical Skills</h4>
+              <div class="skills-list">
+                <span>Machine Learning</span>
+                <span>Natural Language Processing</span>
+                <span>Artificial Intelligence</span>
+                <span>Deep Learning</span>
+              </div>
+            </div>
+    
+            <div class="skill-category">
+              <h4>Tools/Platforms</h4>
+              <div class="skills-list">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>MySQL Server</span>
+              </div>
+            </div>
+    
+            <div class="skill-category">
+              <h4>Soft Skills</h4>
+              <div class="skills-list">
+                <span>Problem-Solving</span>
+                <span>Team Player</span>
+                <span>Adaptability</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="education-section" data-aos="fade-up">
+          <h3>Education</h3>
+          <div class="education-item">
+            <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+            <p>Lovely Professional University, Phagwara, Punjab</p>
+            <p>CGPA: 6.86 | Since August 2022</p>
+          </div>
+          <div class="education-item">
+            <h4>Intermediate</h4>
+            <p>S.S.P.S.Secondary School, Jaunpur, U.P.</p>
+            <p>Percentage: 78.9% | Jun' 20 – Apr ' 22</p>
+          </div>
+          <div class="education-item">
+            <h4>Matriculation</h4>
+            <p>Sarvoday Inter College, Jaunpur, U.P.</p>
+            <p>Percentage: 87% | Jun' 19– May' 20</p>
+          </div>
+        </div>
+    
+        <div class="training-section" data-aos="fade-up">
+          <h3>Training</h3>
+          <div class="training-item">
+            <h4>Flutter Development at Cipher Schools</h4>
+            <p>Jun' 24 – Jul' 24</p>
+            <ul>
+              <li>Build apps for Android, iOS, Web, and Desktop using a single codebase</li>
+              <li>Proficient in Dart language for developing Flutter applications</li>
+              <li>Integrated Firebase Authentication for Google and email/password sign-in</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="projects-section" data-aos="fade-up">
+          <h3>Projects</h3>
+          <div class="project-item">
+            <h4>To Do List | Dec' 24</h4>
+            <ul>
+              <li>Simple To-Do List App for task management and productivity</li>
+              <li>Implemented Provider for State Management</li>
+              <li>Integrated Firebase authentication, push notifications, and cloud synchronization</li>
+            </ul>
+          </div>
+          <div class="project-item">
+            <h4>Cartpole Balancing Bot | Python, ML | Nov' 24</h4>
+            <ul>
+              <li>Implemented Reinforcement Learning for pole balancing in OpenAI Gym</li>
+              <li>Developed Q-learning-based agent for optimal action selection</li>
+              <li>Used trial-and-error learning for improved decision-making</li>
+            </ul>
+          </div>
+          <div class="project-item">
+            <h4>Advanced Named Entity Recognition | Python, ML, NLP | July' 24</h4>
+            <ul>
+              <li>Implemented Vector Space Models for feature extraction</li>
+              <li>Developed LSTM-based deep learning model</li>
+              <li>Enhanced entity recognition accuracy through combined approach</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="certifications-section" data-aos="fade-up">
+          <h3>Certifications</h3>
+          <div class="certification-list">
+            <div class="certification-item">
+              <h4>Cloud Computing | NPTEL</h4>
+              <p>Dec' 24</p>
+            </div>
+            <div class="certification-item">
+              <h4>IBM DevOps and Software Engineering | Coursera</h4>
+              <p>Nov' 24</p>
+            </div>
+            <div class="certification-item">
+              <h4>Flutter Development | Cipher Schools</h4>
+              <p>July' 24</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+</section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+          <h3>Get in Touch</h3>
+          <p>Feel free to reach out to me for any questions or opportunities. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Jhalandhar,Panjab</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>nj22260@gamil.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+918887697896</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="https://github.com/jaiswal-lpu" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/neha-1jaiswal-/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="contact-form" data-aos="fade-left" data-aos-delay="300">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+              <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+              <span class="error-message"></span>
+            </div>
+            <button type="submit" class="btn primary-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Neha Jaiswal. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#hero" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+</html>
